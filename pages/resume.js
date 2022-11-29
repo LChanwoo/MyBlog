@@ -3,19 +3,20 @@ import 'nextra-theme-blog/style.css'
 import { useEffect, useState } from 'react';
 import { NotionRenderer } from 'react-notion';
 
+export async function getStaticProps() {
+    const NOTION_PAGE_ID = '160bea0ed31b4f53b1a497d5252906cb';
+    const data = await fetch(
+        `https://notion-api.splitbee.io/v1/page/${NOTION_PAGE_ID}`
+    ).then(res => res.json());
+    return {
+        props: {
+            blockMap: data
+        }
+    };
+}
 
-function Resume(){
-    const [response, setResponse] = useState({});
-
-    const YEAR = new Date().getFullYear()
-    useEffect(async () => {
-        const NOTION_PAGE_ID = '160bea0ed31b4f53b1a497d5252906cb';
-        await fetch(`https://notion-api.splitbee.io/v1/page/${NOTION_PAGE_ID}`)
-          .then(res => res.json())
-          .then((resJson) => {
-            setResponse(resJson);
-          });
-      }, [])
+export default ({ blockMap })=>{
+    const YEAR = new Date().getFullYear();
     return (
             <article class="container prose prose-sm md:prose dark:prose-dark">
                 <h1>Aldrich's Portfolio Blog</h1>
@@ -26,7 +27,7 @@ function Resume(){
                     <Link href={"/resume"} ><span class="nav-link">Resume</span></Link>
                 </div>
                 <div>        
-                    <NotionRenderer blockMap={response} fullPage={true}/>  
+                    <NotionRenderer blockMap={blockMap} fullPage={true}/>  
                 </div>
 
                 <small style={{display:"block",marginTop:"8rem"}}>
@@ -36,5 +37,4 @@ function Resume(){
             </article>
 
     )
-}
-export default Resume;
+};

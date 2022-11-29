@@ -4,6 +4,7 @@ export default {
   footer: (
     <small style={{ display: 'block', marginTop: '8rem' }}>
       <time>{YEAR}</time> © Aldrich Lee.
+      <div><a href="/resume">Resume</a></div>
       <style jsx>{`
         a {
           float: right;

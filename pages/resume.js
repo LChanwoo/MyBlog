@@ -2,7 +2,6 @@ import Link from 'next/link';
 import 'nextra-theme-blog/style.css'
 import { useEffect, useState } from 'react';
 import { NotionRenderer } from 'react-notion';
-
 export async function getStaticProps() {
     const NOTION_PAGE_ID = '160bea0ed31b4f53b1a497d5252906cb';
     const data = await fetch(
@@ -24,7 +23,6 @@ export default ({ blockMap })=>{
                     <a class="nav-link" href="/">About</a>
                     <a class="nav-link" href="/posts">Posts</a>
                     <a class="nav-link" href="/portfolios">Portfolios</a>
-                    <Link href={"/resume"} ><span class="nav-link">Resume</span></Link>
                 </div>
                 <div>        
                     <NotionRenderer blockMap={blockMap} fullPage={true}/>  
@@ -33,6 +31,18 @@ export default ({ blockMap })=>{
                 <small style={{display:"block",marginTop:"8rem"}}>
                     <time >{YEAR} </time>
                       © Aldrich Lee.
+                    <div><a href="/resume">Resume</a></div>
+                    <style jsx>{`
+                        a {
+                        float: right;
+                        }
+                        @media screen and (max-width: 480px) {
+                        article {
+                            padding-top: 2rem;
+                            padding-bottom: 4rem;
+                        }
+                        }
+                    `}</style>
                 </small>
             </article>
 

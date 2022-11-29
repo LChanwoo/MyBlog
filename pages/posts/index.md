@@ -1,7 +1,7 @@
 ---
 type: posts
 title: Posts
-date: 2021-03-18
+date: 2022-11-30
 ---
 
-# Posts
+# Aldrich's Portfolio Blog

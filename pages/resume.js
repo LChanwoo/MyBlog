@@ -24,8 +24,9 @@ export default ({ blockMap })=>{
                     <a class="nav-link" href="/posts">Posts</a>
                     <a class="nav-link" href="/portfolios">Portfolios</a>
                 </div>
-                <div>        
-                    <NotionRenderer blockMap={blockMap} fullPage={true}/>  
+                <div>
+                    <h1>이력서</h1>        
+                    <NotionRenderer blockMap={blockMap} fullPage={false}/>  
                 </div>
 
                 <small style={{display:"block",marginTop:"8rem"}}>

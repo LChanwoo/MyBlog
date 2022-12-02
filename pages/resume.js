@@ -26,7 +26,17 @@ export default ({ blockMap })=>{
                 </div>
                 <div>
                     <h1>이력서</h1>        
-                    <NotionRenderer blockMap={blockMap} fullPage={false}/>  
+                    <NotionRenderer blockMap={blockMap} fullPage={false} />  
+                    <style jsx>{`
+                        
+                        p .notion-text {
+                            margin-top: 1em;
+                            margin-bottom: 1em;
+                            
+                        }
+                        
+                        
+                    `}</style>
                 </div>
 
                 <small style={{display:"block",marginTop:"8rem"}}>
@@ -42,7 +52,13 @@ export default ({ blockMap })=>{
                             padding-top: 2rem;
                             padding-bottom: 4rem;
                         }
+                        .notion-text {
+                            margin-top: 1em;
+                            margin-bottom: 1em;
+                            
                         }
+                        }
+                        
                     `}</style>
                 </small>
             </article>

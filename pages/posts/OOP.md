@@ -1,6 +1,6 @@
 ---
-title: 객체지향 vs 함수형 프로그래밍
-description: View examples of all possible Markdown options.
+title:  객체지향 vs 함수형 프로그래밍
+description: 객체지향 프로그래밍과 함수형 프로그래밍 정리  
 date: 2022-12-02
 tag: web development, OOP, FP 
 author: You

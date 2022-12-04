@@ -62,4 +62,18 @@ img.next-image {
 
 .nav-line .nav-link {
   color: #69778c;
+  font-weight: 800;
+  font-size: 20px;
+  font-family: 'pretendard';
 }
+
+.post-item-title {
+
+  font-weight: 800;
+  font-size: 22px;
+}
+/* 
+h1:nth-child(1) {
+  color: white;
+  background-color: gray;
+} */

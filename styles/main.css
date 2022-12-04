@@ -77,3 +77,30 @@ h1:nth-child(1) {
   color: white;
   background-color: gray;
 } */
+
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background: black;
+    }
+  
+    h1,
+    h2,
+    h3 {
+      color: #fff;
+    }
+  
+    p,
+    dl {
+      color: #dbdbdb;
+    }
+  
+    a {
+      color: #41adff;
+    }
+  
+    code {
+      color: #ffbe85;
+      background: #161f27;
+    }
+  }

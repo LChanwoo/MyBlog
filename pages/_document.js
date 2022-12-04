@@ -2,8 +2,8 @@ import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
   const meta = {
-    title: 'Next.js Blog',
-    description: 'Next.js portfolio',
+    title: '이찬우의 Next.js Blog',
+    description: 'Next.js 포트폴리오 블로그',
     image: '/images/22313.png'
   }
 

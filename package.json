@@ -13,9 +13,11 @@
     "next-notion": "^1.0.0-canary.1",
     "nextra": "^2.0.0-beta.5",
     "nextra-theme-blog": "^2.0.0-beta.5",
+    "notion-client": "^6.15.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-notion": "^0.10.0",
+    "react-notion-x": "^6.15.7",
     "rss": "^1.2.2"
   },
   "prettier": {

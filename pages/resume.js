@@ -1,7 +1,10 @@
 import Link from 'next/link';
-import 'nextra-theme-blog/style.css'
-import { useEffect, useState } from 'react';
+// import 'nextra-theme-blog/style.css'
+import "react-notion/src/styles.css";
+import "prismjs/themes/prism-tomorrow.css";
 import { NotionRenderer } from 'react-notion';
+// import { NotionRenderer, BlockMapType } from 'react-notion-x';
+// import { NotionAPI } from 'notion-client'
 export async function getStaticProps() {
     const NOTION_PAGE_ID = '160bea0ed31b4f53b1a497d5252906cb';
     const data = await fetch(
@@ -12,6 +15,13 @@ export async function getStaticProps() {
             blockMap: data
         }
     };
+    // const notion = new NotionAPI();
+    // const blockMap = await notion.getPage(NOTION_PAGE_ID);
+    // return {
+    //     props: {
+    //         blockMap
+    //     }
+    // }
 }
 
 export default ({ blockMap })=>{

@@ -61,7 +61,8 @@ img.next-image {
 }
 
 .nav-line .nav-link {
-  color: #69778c;
+  /* color: #69778c; */
+  color: black;
   font-weight: 800;
   font-size: 20px;
   font-family: 'pretendard';
@@ -78,7 +79,7 @@ h1:nth-child(1) {
   background-color: gray;
 } */
 
-
+/* 
   @media (prefers-color-scheme: dark) {
     body {
       background: black;
@@ -87,20 +88,23 @@ h1:nth-child(1) {
     h1,
     h2,
     h3 {
-      color: #fff;
+      color: white;
     }
   
+    .prose {
+      color: white !important; 
+    }
     p,
     dl {
-      color: #dbdbdb;
+      color: white;
     }
   
     a {
-      color: #41adff;
+      color: white;
     }
   
     code {
       color: #ffbe85;
       background: #161f27;
     }
-  }
+  } */

@@ -4,7 +4,7 @@ export default function Document() {
   const meta = {
     title: 'Next.js Blog',
     description: 'Next.js portfolio',
-    image: 'https://assets.vercel.com/image/upload/q_auto/front/vercel/dps.png'
+    image: '/images/22313.png'
   }
 
   return (
